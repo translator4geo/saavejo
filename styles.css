@@ -209,9 +209,9 @@ nav a:focus {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
 }
 
-.product:last-of-type {
+/*.product:last-of-type {
     margin-bottom: 2em;
-}
+}*/
 
 .product__content {
     padding: 0.5em;

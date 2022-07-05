@@ -9,9 +9,9 @@
 
 :root {
  --clr-text: #381d1d;
- --clr-primary: #77be78;
- --clr-primary-dark: #549255;
- --clr-accent: #b348d0;
+ --clr-primary: #5654e4;
+ --clr-primary-dark: #4ac389;
+ --clr-accent: #b0b2ac;
  --clr-accent-dark: #924aaf;
 
  --ff-title: ;
@@ -34,7 +34,9 @@ html {
 body {
  margin: 0;
  text-align: center;
-
+/* padding: 2em;
+border-radius: 1px;
+border-color: #b0b2ac; */
 }
 
 img {
@@ -43,7 +45,7 @@ img {
 }
 
 section {
-    padding: 3em 1em;
+    padding: 1em 1em;
 }
 
 
@@ -58,7 +60,7 @@ h2,h3 {
 }
 
 h2{
- font-size: 2.7rem;
+ font-size: 1rem;
 }
 
 p {
@@ -66,7 +68,7 @@ p {
 }
 
 .section-title-small {
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .section-title-small small{
@@ -82,6 +84,7 @@ p {
 .logo {
  font-family: var(--ff-serif);
  text-align: center;
+ padding: 0.5em;
 }
 
 .logo a {
@@ -89,9 +92,18 @@ p {
  color: black;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+ color: var(--clr-accent);
+ text-decoration: underline;
+}
 
 header {
- padding: 1em 0 2em;
+ padding: 1em 0 1em;
 }
 
 .header-nav {
@@ -128,10 +140,12 @@ nav a:focus {
  text-decoration: underline;
 }
 
-
+.intro {
+    padding: 1em;
+}
 
 .btn-group {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     /* justify-content: center; */
     flex-direction: column;
@@ -142,7 +156,7 @@ nav a:focus {
 
 .btn {
     padding: .75em 2.5em;
-    color: white;
+    color: rgb(20, 19, 19);
     text-decoration: none;
     display: inline-block;
     margin: .5em 0;
@@ -170,10 +184,10 @@ nav a:focus {
 
 
 .hero {
- background-color: rgb(135, 133, 133);
- background-image: url(../img/bedroom.jpg); 
- background-blend-mode: multiply;
- background-attachment: fixed; 
+ /* background-color: rgb(135, 133, 133); */
+ /* background-image: url(../img/bedroom.jpg);  */
+ /* background-blend-mode: multiply; */
+ /* background-attachment: fixed;  */
  background-size: cover;
  color: white;
  text-align: center;
@@ -187,19 +201,19 @@ nav a:focus {
     flex-direction: row;
     color: white;
     padding: 0;
-    
+    justify-content: left;
 }
 
 .about-us__intro {
     background: var(--clr-accent);  
-    padding: 3em 1em 1em;  
+    /* padding: 3em 1em 1em;   */
     background-image: url(../img/furniture1.jpg);
-    background-blend-mode: difference;
+    background-blend-mode: multiply, difference;
     
 }
 
 .about-us__body {
-    padding: 1.5em 1em 3em;
+    padding: 1.5em 1em 2em;
 }
 
 .order-online {
@@ -232,7 +246,7 @@ nav a:focus {
 
 .product__title {
     color: var(--clr-primary);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5em;
 }
 
@@ -286,16 +300,16 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3em 1em;
+    padding: 2em 1em;
 }
 
 .about-us__intro {
-    text-align: right;
+    text-align: center;
 }
 
 .about-us__intro > * {
     max-width: 25rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .products {

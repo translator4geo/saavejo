@@ -87,6 +87,8 @@ p {
   font-family: var(--ff-serif);
   text-align: center;
   padding: 0.5em;
+  display: flex;
+  justify-content: center;
 }
 
 .logo a {

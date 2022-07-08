@@ -7,15 +7,16 @@
 }
 
 :root {
-  --clr-text: #381d1d;
-  --clr-primary: #5654e4;
+  --clr-text: #101010;
+  --clr-primary: #6461b8;
   --clr-primary-dark: #4ac389;
-  --clr-accent: #b0b2ac;
+  --clr-accent: #847ce4;
   --clr-accent-dark: #924aaf;
 
   --ff-title: ;
   --ff-serif: 'Crimson Text', serif;
 }
+
 
 *,
 *::before,
@@ -93,22 +94,10 @@ p {
   color: var(--clr-primary);
 }
 
-/* .logoplace {
-  padding: 0;
-  display: inline-block;
-  margin-top: 20px;
-  justify-content: left;
-} */
-
-/* .logo a {
-  text-decoration: none;
-  color: black;
-} */
-
 a {
   text-decoration: none;
   font-size: 20px;
-  color: #5654e4;
+  color: #101010;
 }
 
 a:hover,
@@ -126,15 +115,20 @@ header {
     justify-content: left;
 }
 
+.logo {
+  
+}
+
 .header-nav {
   display: flex;
-  float: right;
+  position: relative;
+  left: 20px;
   list-style: none;
   justify-content: right;
   text-decoration: none;
   /* margin: 0;
   /* margin-left: 9em; */
-  padding-top: 1em; */
+  padding: 1em; */
 }
 
 /* .header-nav a {
@@ -152,7 +146,7 @@ nav li {
 nav a {
   /* display: flex; */
   padding: 0.5em;
-  color: var(--clr-primary);
+  color: var(--clr-text);
   text-decoration: none;
 }
 
@@ -165,75 +159,6 @@ nav a:focus {
 .intro {
   padding: 1em;
 }
-
-/* .btn-group {
-  display: inline-block;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  margin: 1em;
-}
-
-.btn {
-  padding: 0.75em 2.5em;
-  color: rgb(20, 19, 19);
-  text-decoration: none;
-  display: inline-block;
-  margin: 0.5em 0;
-  border-radius: 0.25em;
-}
-
-.btn-primary {
-  background: var(--clr-primary);
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-  background: var(--clr-primary-dark);
-}
-
-.btn-accent {
-  background: var(--clr-accent);
-}
-.btn-accent:hover,
-.btn-accent:focus {
-  background: var(--clr-accent-dark);
-} */
-
-/*.hero {
-   background-color: rgb(135, 133, 133); */
-/* background-image: url(../img/bedroom.jpg);  */
-/* background-blend-mode: multiply; */
-/* background-attachment: fixed;  */
-/* background-size: cover;
-  color: white;
-  text-align: center;
-  padding: 15vh 1em;
-}
-
-.about-us {
-  background: var(--clr-accent);
-  display: flex;
-  flex-direction: row;
-  color: white;
-  padding: 0;
-  justify-content: left;
-}
-
-.about-us__intro {
-  background: var(--clr-accent);
-  /* padding: 3em 1em 1em;   */
-/* background-image: url(../img/furniture1.jpg);
-  background-blend-mode: multiply, difference;
-} */
-
-/* .about-us__body {
-  padding: 1.5em 1em 2em;
-}
-
-.order-online {
-  background: #f0ebeb;
-} */
 
 .products {
   display: flex;
@@ -268,9 +193,9 @@ nav a:focus {
 }
 
 footer {
-  background: rgb(125, 117, 117);
+  background: rgb(168, 161, 161);
   padding: 0;
-  color: #f0ebeb;
+  color: white;
   display: flex;
   list-style: none;
 }
@@ -281,6 +206,7 @@ footer a {
 }
 
 .footer-nav {
+  display: block;
   list-style: none;
   justify-content: center;
   text-decoration: none;
@@ -288,11 +214,9 @@ footer a {
   padding: 0;
 }
 
-.footer-nav a {
-  padding: 0.75em;
-  text-decoration: none;
-  list-style: none;
-  /* display: block; */
+.social {
+  display: flex;
+  flex-direction: column;
 }
 
 #num {
@@ -317,8 +241,8 @@ footer a {
   padding: 10px;
 }
 
-.footer-nav a:hover {
-  text-decoration: underline;
+.footer-box:last-of-type {
+  margin-left: 1em;
 }
 
 @media only screen and (min-width: 750px) {

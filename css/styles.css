@@ -33,6 +33,7 @@ html {
 body {
   margin: 0;
   text-align: center;
+  /* background-color: rgb(71, 47, 231); */
   /* padding: 2em;
 border-radius: 1px;
 border-color: #b0b2ac; */
@@ -225,10 +226,11 @@ nav a:focus {
 
 .product {
   padding: 1em;
-  border-radius: 1em;
+  /* border-radius: 1em; */
 
   overflow: hidden;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  margin-right: 1em;
 }
 
 /* .product:last-of-type {
@@ -334,7 +336,7 @@ footer a {
   }
 
   .product {
-    margin: 0;
+    margin-right: 1em;
     flex: 0 1 33%;
   }
 }

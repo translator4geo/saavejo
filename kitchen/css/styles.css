@@ -159,6 +159,7 @@ nav a:focus {
 
 .container {
   margin: auto;
+  border: solid rgb(173, 157, 157) 10px;
 }
 
 .image-gallery {

@@ -108,11 +108,12 @@ a:focus {
 
 header {
  /* background: var(--clr-accent); */
-    display: flex; 
+    display: inline-block; 
     flex-direction: row;
     /* color: white; */
     padding: 0;
     justify-content: left;
+    margin: auto;
 }
 
 .logo {

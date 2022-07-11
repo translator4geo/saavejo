@@ -278,19 +278,9 @@ footer a {
   flex-direction: column;
 }
 
-/* #num {
-  padding-top: 1em;
-  font-size: 15px;
-}
-
-#address {
-  padding: 1em;
-}
-
-#day {
-  padding: 0;
-  margin: 0;
-} */
+#num {
+  margin-bottom: 1em;
+ }
 
 .footer-box {
   display: flex;

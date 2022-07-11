@@ -10,8 +10,9 @@
   <body>
     <section>
     <header>
-      <div class="logo">
-        <img src="img/logo1.png" alt="" />
+     <div class="logo">
+        <!-- <img src="img/logo1.png" alt="" /> -->
+        <h1>საავეჯო</h1>
       </div>
 
       <nav class="header-nav">
@@ -23,76 +24,90 @@
         </li>
       </nav>
     </header>
-    <main>
-      <section>
-        <div class="container">
-          <!-- heading text -->
-          <ul class="image-gallery">
-            <li>
-              <img src="img/kitchen.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </li>
-            <li>
-              <img src="img/kitchen.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </li>
-            <li>
-              <img src="img/kitchen.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </li>
-            <li>
-              <img src="img/kitchen.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </li>
-            <li>
-              <img src="img/kitchen.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </li>
-            <li>
-              <img src="img/kitchen.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </li>
-            <li>
-              <img src="img/kitchen.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </li>
-            <li>
-              <img src="img/kitchen.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </li>
-            <li>
-              <img src="img/kitchen.jpg" alt="" />
-              <div class="overlay"><span>Image title</span></div>
-            </li>
-            <!-- other items here -->
-          </ul>
-        </div>
-    </section>
-    </main>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/kitchen.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/furniture1.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/other.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<!-- <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div> -->
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
     <br>
     <footer class="footer-nav">
       <!-- <li> -->
         <div class="footer-box">
           <p>მისამართი</p>
-          <!-- <a href="#">მისამართი</a> -->
-          <p id="address">ინგოროყვას 30, თბილისი</p>
+         <p>ინგოროყვას 30</p>
+         <p>თბილისი</p>
         </div>
         <div class="footer-box">
           <p>ტელეფონი</p>
-          <!-- <a href="#">ტელეფონი</a> -->
-          <p id="num">587 985 895</p>
+          <p>587 985 895</p>
         </div>
         <div class="footer-box">
           <p>სამუშაო საათები</p>
-          <!-- <a href="#">სამუშაო საათები</a> -->
-          <p id="day">ორშაბათი-პარასკევი 09:00-19:00</p>
+          <p>ორშაბათი-პარასკევი 09:00-19:00</p>
           <p>შაბათი-კვირა 10:00-13:00</p>
         </div>
 
-        <div class="footer-box">
+        <div class="social">
           <h2><a href="">Email</a></h2>
           <h2><a href="">Facebook</a></h2>
           <h2><a href="">Instagram</a></h2>
         </div>
+        </footer>
   </body>
 </html>

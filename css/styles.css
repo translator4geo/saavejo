@@ -64,7 +64,6 @@ section {
 
 h1,
 h2,
-h3,
 h4,
 p {
   margin: 0;
@@ -76,6 +75,10 @@ h3 {
   font-family: var(--ff-title);
   line-height: 1;
   letter-spacing: 1px;
+  font-size: 15px;
+  padding-top: 0.2em;
+  /* background-color: #847ce4; */
+  margin: 0;
 }
 
 h2 {

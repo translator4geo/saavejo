@@ -26,15 +26,19 @@
 
 html {
   box-sizing: border-box;
+  /* padding: 1em; */
   font-family: var(--ff-serif);
   color: var(--clr-text);
   font-size: 1.25rem;
+  justify-content: center;
 }
 
 body {
   margin: 0;
   text-align: center;
-  padding-left: 1em;
+  margin-left: 1em;
+  justify-content: center;
+  /* padding: 2em; */
   /* background-color: rgb(71, 47, 231); */
   /* padding: 2em;
 border-radius: 1px;

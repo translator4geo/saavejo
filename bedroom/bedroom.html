@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Saavejo</title>
+  </head>
+  <body>
+    <section>
+    <header>
+      <div class="logo">
+        <!-- <img src="img/logo1.png" alt="" /> -->
+        <h1>საავეჯო</h1>
+      </div>
+
+      <nav class="header-nav">
+        <li>
+           <a href="../index.html">მთავარი</a>
+          <a href="#">ჩვენს შესახებ</a>
+          <a href="#">დაგვიკავშირდით</a>
+          <a href="#">პროდუქცია</a>
+        </li>
+      </nav>
+    </header>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/bedroom.jpg" style="width:100%">
+  <div class="text">კომპაქტური დიზაინი</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/bedroom1.jpg" style="width:100%">
+  <div class="text">კლასიკური დიზაინი</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/bedroom2.jpg" style="width:100%">
+  <div class="text">კომპაქტური დიზაინი</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/bedroom3.jpg" style="width:100%">
+  <div class="text">კომპაქტური დიზაინი</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/bedroom4.jpg" style="width:100%">
+  <div class="text">კომპაქტური დიზაინი</div>
+</div>
+
+<!-- <div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/other.jpg" style="width:100%">
+  <div class="text">უდიზაინესი</div>
+</div> -->
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<!-- <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div> -->
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    <br>
+    <footer>
+          <h2><a href="">Email</a></h2>
+          <h2><a href="https://www.facebook.com/avejissaamkro">Facebook</a></h2>
+          <h2><a href="">Instagram</a></h2>
+    <div id="num">
+          <p>ტელეფონი: 587 985 895</p>
+          <p></p>
+        </div>
+
+        </footer>
+  </body>
+</html>

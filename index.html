@@ -11,7 +11,7 @@
   <body>
     <header>
       
-      <h1 class="logo"><img src="img/logo1.png" alt=""></h1>
+      <div class="logo"><img src="img/logo1.png" alt=""></div>
 
        <nav class="header-nav">
         <li>
@@ -23,19 +23,15 @@
       </nav>   
     </header>
     <main>
-
-      <!-- <section class="hero">
-        <h2 class="section-title">საუკეთესო ავეჯი რეგიონში</h2>
-      </section> -->
       <section class="intro">
         <h2 class="section-title">
           ჩვენ დაგიმზადებთ ნებისმიერი სახის პანელურ ავეჯს
         </h2>
       </section>
       <section class="about-us">
-        <header class="about-us__intro">
+        <div class="about-us__intro">
           <h2 class="section-title-small"><small>დღეს ჩვენი კომპანია 15 წელს ითვლის.</h2>
-        </header>
+          </div>
         <div class="about-us__body">
 
           <p>დაარსდა 2012 წელს და აერთიანებს 20 პროფესიონალს.</p>
@@ -45,28 +41,16 @@
           </p>
         </div>
       </section>
-      <!-- <section class="order-online">
-        <header>
-          <h2 class="section-title">შეუკვეთეთ აქ</h2>
-        </header>
-        <p>
-          მოგვწერეთ თქვენი სასურველი პროდუქციის შესახებ და დაგიბრუნდებით
-          პასუხებით.
-        </p>
-        <div class="btn-group">
-          <a href="" class="btn btn-primary">საძინებლის შესახებ</a>
-          <a href="" class="btn btn-primary">სამზარეულოს შესახებ</a>
-          <a href="" class="btn btn-primary">სხვა ინტერიერი</a>
-        </div>
-      </section> -->
+      
       <setion class="product-showcase">
-        <header>
-          <h2 class="section-title">პროდუქცია</h2>
-        </header>
+        <div>
+          <h2 class="section-title-top">პროდუქცია</h2>
+        </div>
         <div class="products">
           <div class="product">
-            
-            <img src="img/bedroom.jpg" alt="" class="product__img" />
+            <div class="badroom-img">
+            <img src="img/bedroom.jpg" alt="" />
+            </div>
             <div class="product__content">
             <h3 class="product__title">საძინებელი</h3>
             <p>საძინებელი მზადდება უმაღლესი ხარისხის მდფ-ისგან.</p>
@@ -77,8 +61,10 @@
           </div>
           </div>
           <div class="product">
-            
-            <img src="img/kitchen.jpg" alt="" class="product__img" />
+            <div class="kitchen-img">
+            <img src="img/kitchen.jpg" alt=""  />
+          </div>
+
             <div class="product__content">
             <h3 class="product__title">სამზარეულო</h3>
             <p>კარგი სამზარეულო ყველა სახლს სჭირდება.</p>
@@ -88,8 +74,9 @@
             </div>
           </div>
           <div class="product">
-            
-            <img src="img/other.jpg" alt="" class="product__img" />
+            <div class="other-img">
+            <img src="img/other.jpg" alt="" />
+          </div>
             <div class="product__content">
             <h3 class="product__title">ინტერიერი</h3>
             <p>სახლის სილამაზის ყველაზე მნიშვნელოვანი კომპონენტი მისი ინტერიერ დიზაინია.</p>

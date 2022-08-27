@@ -8,9 +8,9 @@
 
 :root {
   --clr-text: #381d1d;
-  --clr-primary: #5654e4;
+  --clr-primary: #0b0b0b;
   --clr-primary-dark: #4ac389;
-  --clr-accent: #b0b2ac;
+  --clr-accent: #b0acb2;
   --clr-accent-dark: #924aaf;
 
   --ff-title: ;
@@ -38,7 +38,7 @@ body {
 
 img {
   display: flex;
-  width: 500px;
+  width: 800px;
   height: 300px;
   max-width: 100%;
 }
@@ -88,12 +88,9 @@ p {
   color: var(--clr-primary);
 }
 
-.logo {
-  font-family: var(--ff-serif);
-  text-align: left;
-  padding: 0.5em;
-  display: flex;
-  justify-content: center;
+.logo img {
+  height: 200px;
+  width: 400px;
 }
 
 .logo a {
@@ -107,7 +104,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--clr-accent);
+  color: blue;
   text-decoration: underline;
 }
 
@@ -129,7 +126,7 @@ header {
 nav li {
   list-style: none;
   margin: 3em;
-  padding: 3em;
+  padding: 1em;
   justify-content: space-around;
 }
 
@@ -141,7 +138,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  color: var(--clr-accent);
+  color: blue;
   text-decoration: underline;
 }
 
@@ -166,12 +163,12 @@ nav a:focus {
 }
 
 .btn-primary {
-  background: var(--clr-primary);
+  background: rgb(172, 169, 169);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background: var(--clr-primary-dark);
+  background: lightblue;
 }
 
 .btn-accent {
@@ -179,7 +176,7 @@ nav a:focus {
 }
 .btn-accent:hover,
 .btn-accent:focus {
-  background: var(--clr-accent-dark);
+  background: lightblue;
 }
 
 .hero {

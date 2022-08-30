@@ -195,6 +195,7 @@ nav a:focus {
 }
 
 .about-us__intro {
+  width: 50%;
   background: var(--clr-accent);
   background-image: url(../img/furniture1.jpg);
   background-blend-mode: multiply, difference;
@@ -203,7 +204,8 @@ nav a:focus {
 }
 
 .about-us__body {
-  padding: 1.5em 1em 2em;
+  width: 50%;
+  padding: 1.5em;
 }
 
 .order-online {
@@ -308,6 +310,7 @@ footer a {
 
   .about-us__intro,
   .about-us__body {
+    width: 100%;
     flex: 0 1 50%;
 
     flex-direction: column;

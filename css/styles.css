@@ -199,6 +199,7 @@ nav a:focus {
   background: var(--clr-accent);
   background-image: url(../img/furniture1.jpg);
   background-blend-mode: multiply, difference;
+/*   background-size: cover; */
   justify-content: center;
   padding: 2em;
 }

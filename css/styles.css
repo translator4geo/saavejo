@@ -201,6 +201,20 @@ nav a:focus {
   padding: 10px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
 footer {
   /* background: #e2e2e2; */
   padding: 0;
